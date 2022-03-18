@@ -1,5 +1,6 @@
 Query btc transaction details, now you need to parse the data.
 Result (if verbose is set to true):
+````
 {                                    (json object)
   "in_active_chain" : true|false,    (boolean) Whether specified block is in the active chain or not (only present with explicit "blockhash" argument)
   "hex" : "hex",                     (string) The serialized, hex-encoded data for 'txid'
@@ -48,7 +49,7 @@ Result (if verbose is set to true):
   "blocktime" : xxx,                 (numeric) The block time expressed in UNIX epoch time
   "time" : n                         (numeric) Same as "blocktime"
 }
-
+````
 
 Example: 
 https://www.blockchain.com/btc/tx/8d787db12e04630a10191772f068fae43d30fbb93e6198e7efa636ce03f16222?show_adv=true
@@ -73,7 +74,7 @@ Run:
 node parse_btc_raw_tx.js
 
 output:
-
+````
 Transactions:   
 [
   {
@@ -95,3 +96,4 @@ Transactions:
     Value: 0.07866618
   }
 ]
+````
